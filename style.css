@@ -1,0 +1,39 @@
+/* body bg chara hero_banner er bg dite hove  */
+body{
+    background: #272626;
+}
+
+.auto_typing {
+   margin: 100px;
+   width: 316px;
+   overflow: hidden;
+}
+.auto_typing .text{
+    position: relative;
+    color: #7040f4;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.auto_typing .text_one{
+    color: #fff;   
+}
+.auto_typing .text_two::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 3px solid #7040f4;
+    background:#272626;
+    animation: go_back 4s steps(12) infinite;
+}
+
+@keyframes go_back {
+    40%, 60% {
+        left: calc(100% + 4px);
+    }
+    100% {
+        left: 0%;
+    }
+}

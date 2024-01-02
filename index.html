@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Typing for Hero Banner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auto_typing">
+        <span class="text text_one">I am  </span>      
+        <span class="text text_two"></span>
+    </div>
+    <!-- JS  -->
+    <script>
+        const text = document.querySelector(".text_two");
+
+        const textLoad = () => {
+            setTimeout(() => {
+               text.textContent = "Jibon Khan" ;
+            }, 0);
+            setTimeout(() => {
+               text.textContent = "Web Developer" ;
+            }, 4000);
+            setTimeout(() => {
+               text.textContent = "Freelancer" ;
+            }, 8000);
+        }
+        textLoad();
+        setInterval(textLoad , 12000);
+
+    </script>
+</body>
+</html>
